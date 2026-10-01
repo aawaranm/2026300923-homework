@@ -1,0 +1,27 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  background-color: #181818;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#profile-name {
+  color: #1db954;
+  font-size: 24px;
+}
+
+.card-info {
+  color: #b3b3b3;
+  font-size: 14px;
+}

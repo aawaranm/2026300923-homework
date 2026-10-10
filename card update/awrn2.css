@@ -1,0 +1,112 @@
+/* Step 3: Global Brand Colors & Setup (Spotify Dark Theme) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #121212; /* Brand dark background */
+  color: #ffffff;            /* Base text color */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Card Container Styling (Satisfies Mission 1 Box Model Requirements) */
+.card-container {
+  background-color: #181818;
+  border-radius: 16px;
+  padding: 32px;            /* Internal breathing space */
+  max-width: 380px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 2px solid #333;   /* Explicit border required by Mission 1 */
+}
+
+/* Step 4: ID Selector (#profile-name) */
+#profile-name {
+  color: #1db954; /* Spotify Accent Green */
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 20px;     /* Added spacing below heading */
+}
+
+/* Step 4: Class Selector (.card-info) */
+.card-info {
+  color: #b3b3b3;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* Bio Section */
+.bio-section p {
+  color: #e0e0e0;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Skills Badges */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.skill-tag {
+  background-color: #282828;
+  color: #1db954;
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* Contact Action Buttons */
+.contact-links {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #1db954;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 18px;
+  border-radius: 25px;
+  margin-right: 15px;       /* Social distancing for buttons required by Mission 1 */
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Removes margin from the last button so they stay centered */
+.btn:last-child {
+  margin-right: 0;
+}
+
+.btn:hover {
+  background-color: #1ed760;
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #727272;
+}
+
+.btn-secondary:hover {
+  background-color: #282828;
+  border-color: #ffffff;
+}

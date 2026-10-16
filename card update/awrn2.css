@@ -1,4 +1,4 @@
-/* Step 3: Global Brand Colors & Setup (Spotify Dark Theme) */
+/* --- Global Brand Colors & Setup (Spotify Dark Theme) --- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,13 +10,50 @@ body {
   color: #ffffff;            /* Base text color */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   min-height: 100vh;
   padding: 20px;
 }
 
-/* Card Container Styling (Satisfies Mission 1 Box Model Requirements) */
+/* --- [Step 1] Navigation Menu Alignment --- */
+.site-header {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-around; /* Distributes space evenly between buttons */
+  background-color: #181818;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #333;
+}
+
+.nav-link {
+  color: #1db954;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* --- [Step 2] Horizontal Card Layout (.content-wrapper) --- */
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust spacing between the cards */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Card Container Styling */
 .card-container {
   background-color: #181818;
   border-radius: 16px;
@@ -28,7 +65,17 @@ body {
   border: 2px solid #333;   /* Explicit border required by Mission 1 */
 }
 
-/* Step 4: ID Selector (#profile-name) */
+/* --- [Step 3] Fix Image Overflow --- */
+.profile-img {
+  /* width: 1000px; */ /* Commented out fixed size to prevent mobile overflow */
+  max-width: 100%;     /* Makes the image scale down nicely */
+  height: auto;        /* Preserves aspect ratio */
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 2px solid #1db954;
+}
+
+/* ID Selector (#profile-name) */
 #profile-name {
   color: #1db954; /* Spotify Accent Green */
   font-size: 28px;
@@ -37,7 +84,7 @@ body {
   margin-bottom: 20px;     /* Added spacing below heading */
 }
 
-/* Step 4: Class Selector (.card-info) */
+/* Class Selector (.card-info) */
 .card-info {
   color: #b3b3b3;
   font-size: 14px;
